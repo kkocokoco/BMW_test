@@ -1,0 +1,146 @@
+/* MemberPage.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('../img/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.members-container {
+  margin-left: 3%;
+  margin-right: 3%;
+  border-radius: 10px;
+  height: 100%;
+  padding: 2%;
+  background-color: #fff;
+}
+
+
+h1 {
+  color: #fff;
+}
+
+.member-card {
+  
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  text-align: left;
+   display: flex;
+  justify-content: space-between; 
+  height: 200px;
+}
+.box {
+  flex: 1; /* Flex-grow to fill available space */
+  margin: 10px; /* Optional: Space between the divs */
+  padding: 20px;
+  text-align: left;
+}
+.text-info {
+    color: #1A73E8 !important;
+	font-weight: bold;
+	margin-left: 30px;
+}
+.members-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.member-row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1* var(--bs-gutter-y));
+    margin-right: calc(-.5* var(--bs-gutter-x));
+    margin-left: calc(-.5* var(--bs-gutter-x));
+}
+.btn-area {
+   margin-left: 30px;
+   margin-top: 10%;
+}
+
+
+.member-card img {
+  border-radius: 10px;
+  width: 200px;
+  height: 200px;
+  margin-top: -25%;
+  margin-left: 10%;
+  object-fit: cover;
+}
+
+.member-card h5 {
+  margin-left: 30px;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #66686b;
+}
+.member-card h6 {
+   color: #1A73E8 !important;
+	font-weight: bold;
+	margin-left: 30px;
+}
+.member-card p {
+  margin-left: 30px;
+  color: #b3bcc8;
+}
+/* src/components/Navigation.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 1rem;
+  color: #fff;
+}
+
+.navbar-title {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar-links li {
+  margin: 0;
+}
+
+.navbar-links a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navbar-links a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .members-container {
+    padding: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .member-card img {
+    width: 100px;
+    height: 100px;
+  }
+}
